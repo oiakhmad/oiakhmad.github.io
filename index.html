@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+         <div class="circle">
+          <figure class="avatar-box ">
+            
+            <img
+              src="./assets/images/people.png"
+              alt="Richard hanrick" width="80">
+          </figure>
+         </div>
+       
+        <div class="info-content">
+          <h1 class="name" title="">Akhmad Zulkarnain</h1>
+
+          <p class="title">Fullstack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:akhmad.py@gmail.com" class="contact-link">akhmad.py@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+6285259008831</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1996-06-24">June 24, 1996</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Probolinggo, Jawatimur, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/akhmad-zulkarnain-258b45177/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/oiakhmad" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+          As a web developer with more than 3 years of experience, I have
+          expertise in software development. I specialize in system management
+          with a deep understanding of the latest technologies.
+          </p>
+
+          <p>
+          My skills
+          encompass both front-end and back-end development, as well as API
+          integration to create efficient and user-friendly solutions. I am confident
+          in my abilities and experience to deliver high-quality code and enhance
+          the user experience.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/layers.png
+                            " alt="Security Implementation:" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Development and Maintenance</h4>
+
+                <p class="service-item-text">
+                  Design and implement APIs (Application Programming Interfaces) that allow the front-end and other systems to communicate
+                  with the server.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/database.png" alt="Database Management icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management</h4>
+
+                <p class="service-item-text">
+                  Design efficient and scalable database schemas. Ensure data integrity and optimize queries for better performance.
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+            
+              <div class="service-icon-box">
+                <img src="./assets/images/security.png
+                                        " alt="Security Implementation" width="40">
+              </div>
+            
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Security Implementation</h4>
+            
+                <p class="service-item-text">
+                  Implement security measures such as encryption, access controls, and protection against attacks like SQL injection.
+                </p>
+              </div>
+            
+            </li>
+            
+            <li class="service-item">
+            
+              <div class="service-icon-box">
+                <img src="./assets/images/integration.png" alt="Integration with External Services icon" width="40">
+              </div>
+            
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Integration with External Services</h4>
+            
+                <p class="service-item-text">
+                  Integrate the application with external services such as shipment delivery, cloud storage and
+                  external APIs.
+                </p>
+              </div>
+            
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/monitoring.png
+                " alt="Monitoring and Debugging" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Monitoring and Debugging</h4>
+
+                <p class="service-item-text">
+                  Monitor application performance, detect and fix bugs or other issues.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/web-development.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+           
+
+          </ul>
+
+        </section>
+
+
+    
+  <section class="service">
+  
+    <h3 class="h3 service-title">expertise and tool</h3>
+  
+    <ul class="service-list">
+  
+      <li class="service-item">
+  
+        <div class="service-icon-box">
+          <img src="./assets/images/app-development.png" alt="Programing Language" width="40">
+        </div>
+  
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Programing Language</h4>
+  
+          <p class="service-item-text">
+          I use Go (Golang) and PHP to build API services. I have implemented various frameworks such as Echo, Laravel,
+          CodeIgniter, and Yii2 in application development.
+          </p>
+        </div>
+  
+      </li>
+  
+      <li class="service-item">
+      
+        <div class="service-icon-box">
+          <img src="./assets/images/data-server.png" alt="Php" width="40">
+        </div>
+      
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Database Management System</h4>
+      
+          <p class="service-item-text">
+             Saya memanfaatkan database MySQL dan MongoDB untuk mengelola kebutuhan sistem secara efektif.
+          </p>
+        </div>
+      
+      </li>
+      <li class="service-item">
+      
+        <div class="service-icon-box">
+          <img src="./assets/images/redis-logo.svg" alt="Redis" width="40">
+        </div>
+      
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Redis </h4>
+      
+          <p class="service-item-text">
+            I use Redis to store data that rarely changes and to reduce the load on the main database.
+          </p>
+        </div>
+      
+      </li>
+        <li class="service-item">
+        
+          <div class="service-icon-box">
+            <img src="./assets/images/version-control.png" alt="Version Control System" width="40">
+          </div>
+        
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">Version Control System</h4>
+        
+            <p class="service-item-text">
+              I have experience using Bitbucket, GitHub, and GitLab for version control management, and I implement both Git Flow and
+              trunk-based development as structured development strategies.
+            </p>
+          </div>
+        
+        </li>
+    </ul>
+  
+  </section>
+
+
+      
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+       
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Back End Engineer</h4>
+
+              <span>PT. Majoo Indonesia (2021 - 2023 / 2 years)</span>
+              <ul class="beautiful-list">
+                <li class="beautiful-item timeline-text ">Integrating third-party APIs to enhance feature functionality,
+                  such as integration with delivery services.</li>
+                <li class="beautiful-item timeline-text ">Integrating third-party APIs to enhance feature functionality,
+                such as integration with delivery services.</li>
+                <li class="timeline-text">Responsible for designing and building a service to facilitate
+                feature needs among services.</li>
+                <li class="timeline-text">Improving service performance by implementing Caching,
+                Query Optimization, Asynchronous Processing, and
+                Compression.</li>
+                <li class="timeline-text">tech in use : PHP, Golang, Event driven (kafka & rabitmq), redis,
+                mongo & firebase.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">WEB Developer</h4>
+
+              <span>PT Eratel Prima (2013 — 2015)</span>
+
+              <p class="timeline-text">
+              Designing and building a system web base & web view Using the Node.js
+              programming language with Express as the framework and HBS as the
+              template engine.
+              Here are some features that have been built : 
+              </p>
+              <ul class="beautiful-list">
+                <li class="timeline-text">Partner location bassed visits</li>
+                <li class="timeline-text">Notification with server worker (one signal)</li>
+                <li class="timeline-text">Information log with telegram bot</li>
+                <li class="timeline-text">Registration by email message</li>
+              </ul>
+  
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Freelance</h4>
+              <span>2019 — Now</span>
+              <ul class="beautiful-list">
+                <li class="timeline-text">Academy Information (laravel framework and tailwindcss).</li>
+                <li class="timeline-text">Academy Information (yii2 framework and bootstrap).</li>
+                <li class="timeline-text">Police Certifieate questionnare (php native).</li>
+              </ul>
+            </li>
+
+          </ol>
+
+        </section>
+        
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nurul Jadid university </h4>
+              <p class="timeline-text">
+                Bachelor in Informatics
+              </p>
+
+              <span>2015 — 2019</span>
+
+           
+            </li>
+
+
+          </ol>
+
+        </section>
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Sales Integrator</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Tabungan Santri</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Sales Integrator</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Tabungan Santri</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="tabungan santri">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tabungan-santri-no-resize/dashboard-tb.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard</h3>
+
+                <p class="project-category">Menampilkan Saldo,Pajak dll </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="tabungan santri">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tabungan-santri-no-resize/pengambilan-tb.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pengambilan</h3>
+
+                <p class="project-category">Form transaksi pengambilan </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sales_integrator/dashboard-si-map.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard Koordinat</h3>
+
+                <p class="project-category">Menampilkan Kordinat mitra yang terdaftar</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sales_integrator/dashboard-si.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard</h3>
+
+                <p class="project-category">Menampilkan Jumlah Client and User</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sales_integrator/registrasi-via-email.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Registrasi</h3>
+
+                <p class="project-category">Data registrasi mitra</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+              <a href="#">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/sales_integrator/trace_mitra.png" alt="metaspark" loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Tracking Status</h3>
+            
+                <p class="project-category">Menampilkan progress document pendaftaran</p>
+            
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="tabungan santri">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tabungan-santri-no-resize/pajak-tb.png" alt="Pajak" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pajak</h3>
+
+                <p class="project-category">Priode Nasabah Membayar Pajak</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/flutter/ovo_app/ovo_home.jpeg" alt="Redesign Ovo" loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Redesign Ovo Home</h3>
+            
+                <p class="project-category">Flutter framework</p>
+            
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/flutter/ovo_app/ovo_profile.jpeg" alt="brawlhalla" loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Redesign Ovo Profile</h3>
+            
+                <p class="project-category">Flutter framework</p>
+            
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/flutter/ovo_app/ovo_finance.jpeg" alt="Redesign" loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Redesign ovo Finance</h3>
+            
+                <p class="project-category">Flutter framework</p>
+            
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/flutter/ovo_app/ovo_info_promo.jpeg" alt="Redesign Ovo" loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Redesign Ovo Promo</h3>
+            
+                <p class="project-category">Flutter framework</p>
+            
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="tabungan santri">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tabungan-santri-no-resize/rekapitulasi-tb.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rekapitulasi</h3>
+
+                <p class="project-category">Menampilkan Data Rekapitulasi Sesuai Data dari user</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+    
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
