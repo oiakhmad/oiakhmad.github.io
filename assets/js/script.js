@@ -20,10 +20,6 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -110,3 +106,38 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+// Get modal and close button elements
+const modal = document.getElementById('myModal');
+const closeModalBtn = document.querySelector('.close-btn');
+const projectLinks = document.querySelectorAll('.project-link');
+const modalImage = document.getElementById('modalImage');
+const modalTitle = document.getElementById('modalTitle');
+const modalCategory = document.getElementById('modalCategory');
+
+// Function to open the modal with dynamic content
+projectLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default action of the <a> tag
+    const title = link.getAttribute('data-title');
+    const category = link.getAttribute('data-category');
+    const imgSrc = link.getAttribute('data-img');
+    
+    modalTitle.textContent = title;
+    modalCategory.textContent = category;
+    modalImage.src = imgSrc;
+    
+    modal.style.display = 'flex';
+  });
+});
+
+// Close the modal when the close button is clicked
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close the modal if the user clicks outside the modal content
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});

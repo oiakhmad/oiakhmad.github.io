@@ -399,7 +399,8 @@
   </section>
 
 
-      
+        <!-- Project List (you can have multiple items like this) -->
+       
 
       </article>
 
@@ -489,7 +490,7 @@
           </ol>
 
         </section>
-        
+      
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -597,7 +598,15 @@
         </header>
 
         <section class="projects">
-
+    <!-- Modal Structure -->
+          <div id="myModal" class="modal">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content">
+              <img src="" alt="Project Image" class="modal-image" id="modalImage">
+              <h3 id="modalTitle"></h3>
+              <p id="modalCategory"></p>
+            </div>
+          </div>
           <ul class="filter-list">
 
             <li class="filter-item">
@@ -658,148 +667,166 @@
 
           <ul class="project-list">
             <li class="project-item  active" data-filter-item data-category="sistem akademik">
-              <a href="#">
-            
+           
+              <a href="#" class="project-link" data-title="Sistem Akademik" data-category="sistem yang dirancang untuk mengelola berbagai aspek administrasi dan proses belajar-mengajar di institusi pendidikan. dibangun menggunakan bahasa pemrograman php (laravel 11), front-end (tailwindcss & livewire ), dan mysql sebagai database"
+                data-img="./assets/images/academic/dashboar improve academic.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
-                  <img src="./assets/images/academic/dashboar improve academic.png" alt="finance" loading="lazy">
+              
+                  <img src="./assets/images/academic/dashboar improve academic.png" alt="Dashboard Laravel 11" loading="lazy">
                 </figure>
-            
-                <h3 class="project-title">Dashboard Laravel 11</h3>
-            
-                <p class="project-category">Sistem akademik And tabungan</p>
-            
+              
+                <h3 class="project-title">Sistem Akademik</h3>
+                <p class="project-category">Build using laravel</p>
               </a>
+              
+           
+
             </li>
 
 
             <li class="project-item  active" data-filter-item data-category="tabungan santri">
-              <a href="#">
+                  <a href="#" class="project-link" data-title="Tabungan Santri" data-category="Sistem yang dirancang untuk mengelola keuangan masing masing santri. dibangun menggunakan bahasa pemrograman php dengan framework yii2, bootstrap dan mysql sebagai databasenya"
+                    data-img="./assets/images/tabungan-santri-no-resize/dashboard-tb.png">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                            <img src="./assets/images/tabungan-santri-no-resize/dashboard-tb.png" alt="finance" loading="lazy">
+                     </figure>
+                  
+                    <h3 class="project-title">Tabugan Santri</h3>
+                    
+                    <p class="project-category">Build using yii2</p> 
+                  </a>
+            </li>
 
+            <li class="project-item  active" data-filter-item data-category="tabungan santri">
+              <a href="#" class="project-link" data-title="Expenditure"
+                data-category="Pada halaman ini digunakan untuk proses pengambilan (tarik tunai) uang nasabah"
+                data-img="./assets/images/tabungan-santri-no-resize/pengambilan-tb.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/tabungan-santri-no-resize/dashboard-tb.png" alt="finance" loading="lazy">
+                  <img src="./assets/images/tabungan-santri-no-resize/pengambilan-tb.png" alt="finance" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Dashboard</h3>
-
-                <p class="project-category">Menampilkan Saldo,Pajak dll </p>
-
+              
+                <h3 class="project-title">Design Expenditure</h3>
+              
+                <p class="project-category">Customer Money withdrawal process</p>
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="tabungan santri">
-              <a href="#">
-
+              <a href="#" class="project-link" data-title="Tampilan Pajak"
+                data-category="Pada halaman ini digunakan untuk proses pemotongan biaya administrasi nasabah selama satu bulan."
+                data-img="./assets/images/tabungan-santri-no-resize/pajak-tb.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/tabungan-santri-no-resize/pengambilan-tb.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/tabungan-santri-no-resize/pajak-tb.png" alt="finance" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Pengambilan</h3>
-
-                <p class="project-category">Form transaksi pengambilan </p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="sales integrator">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/sales_integrator/dashboard-si-map.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dashboard Koordinat</h3>
-
-                <p class="project-category">Menampilkan Kordinat mitra yang terdaftar</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="sales integrator">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/sales_integrator/dashboard-si.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dashboard</h3>
-
-                <p class="project-category">Menampilkan Jumlah Client and User</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="sales integrator">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/sales_integrator/registrasi-via-email.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Registrasi</h3>
-
-                <p class="project-category">Data registrasi mitra</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="sales integrator">
-              <a href="#">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/sales_integrator/trace_mitra.png" alt="metaspark" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Tracking Status</h3>
-            
-                <p class="project-category">Menampilkan progress document pendaftaran</p>
+              
+                <h3 class="project-title">Design Tax</h3>
+              
+                <p class="project-category">Deduction of administrative fees for customers over one month</p>
             
               </a>
             </li>
-
             <li class="project-item  active" data-filter-item data-category="tabungan santri">
-              <a href="#">
-
+              <a href="#" class="project-link" data-title="rekapitulasi"
+                data-category="Memberikan informasi tentang setiap transaksi yang dilakukan oleh nasabah"
+                data-img="./assets/images/tabungan-santri-no-resize/rekapitulasi-tb.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/tabungan-santri-no-resize/pajak-tb.png" alt="Pajak" loading="lazy">
+                  <img src="./assets/images/tabungan-santri-no-resize/rekapitulasi-tb.png" alt="finance" loading="lazy">
+                </figure>
+              
+                <h3 class="project-title"> Design Recapitulation</h3>
+              
+                <p class="project-category">Transaction report</p>
+              
+              </a>
+      
+            </li>
+              <li class="project-item  active" data-filter-item data-category="sales integrator">
+              <a href="#" class="project-link" data-title="Sales integration"
+                data-category="Mengintegrasikan mitra dengan produk secara host-to-host melalui platform online, memudahkan kolaborasi dan meningkatkan efisiensi"
+                data-img="./assets/images/sales_integrator/dashboard-si.png">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/sales_integrator/dashboard-si.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Pajak</h3>
+                <h3 class="project-title">Sales Integrator</h3>
 
-                <p class="project-category">Priode Nasabah Membayar Pajak</p>
-
+                <p class="project-category">Build using node js, with template enghine handlebars and mysql</p>
               </a>
+
+              </li>
+
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+              <a href="#" class="project-link" data-title="Tampilan Lokasi "
+                data-category="Pada tampilan ini digunakan untuk mengetahui semua lokasi mintra yang sudah terdaftar"
+                data-img="./assets/images/sales_integrator/dashboard-si-map.png">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/sales_integrator/dashboard-si-map.png" alt="finance" loading="lazy">
+                </figure>
+              
+                <h3 class="project-title">Design Location</h3>
+              
+                <p class="project-category">Map for identifying partner locations.</p>
+              </a>
+
             </li>
+           
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+                <a href="#" class="project-link" data-title="Tampilan Registrasi"
+                  data-category="Mengirim pesan melalui email yang berisi web form registrasi mitra"
+                  data-img="./assets/images/sales_integrator/registrasi-via-email.png">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/sales_integrator/registrasi-via-email.png" alt="finance" loading="lazy">
+                  </figure>
+                
+                  <h3 class="project-title">Design Registrasi</h3>
+                
+                  <p class="project-category">Send an email message for registration online</p>
+                </a>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sales integrator">
+                <a href="#" class="project-link" data-title="Tampilan Lacak "
+                  data-category="untuk mengetahui perkembangan dokumen mintra pendaftar"
+                  data-img="./assets/images/sales_integrator/trace_mitra.png">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/sales_integrator/trace_mitra.png" alt="finance" loading="lazy">
+                  </figure>
+                
+                  <h3 class="project-title">Design Tracking</h3>
+                
+                  <p class="project-category">Tracking document to monitor the progress of the registration process.</p>
+                </a>
+            </li>
+
+       
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
             
@@ -868,30 +895,14 @@
             
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="tabungan santri">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tabungan-santri-no-resize/rekapitulasi-tb.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Rekapitulasi</h3>
-
-                <p class="project-category">Menampilkan Data Rekapitulasi Sesuai Data dari user</p>
-
-              </a>
-            </li>
+           
 
           </ul>
 
         </section>
 
       </article>
-    
+     
     </div>
 
   </main>
